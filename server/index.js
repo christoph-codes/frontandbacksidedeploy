@@ -12,7 +12,7 @@ app.get('/sample-route', (req, res) => {
 	// Store some values and write some functions
 	const name = 'Christopher Jones';
 
-	const addMiddleName = (midname) => {
+	const addMiddleName = (midname = 'Kirk') => {
 		let newName = name.split(' ', 2);
 		newName.splice(1, 0, midname);
 
